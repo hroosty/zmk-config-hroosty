@@ -40,11 +40,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans     &trans    &trans    &kp C_AL_TASK_MANAGER  &kp C_AL_CALC  &kp C_SNAPSHOT                          &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT         &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE
-&kp F1     &kp F2    &kp F3    &kp F4                 &kp F5         &kp F6                                  &kp F7      &kp F8            &kp F9             &kp F10       &kp F11          &kp F12
-&kp GRAVE  &kp EXCL  &kp AT    &kp HASH               &kp DOLLAR     &kp PRCNT                               &kp PLUS    &kp KP_ASTERISK   &kp CARET          &kp LT        &kp GT           &kp EQUAL
-&kp TILDE  &trans    &kp LBRC  &kp RBRC               &kp LBKT       &kp RBKT        &kp LPAR     &kp RPAR   &kp MINUS   &kp SLASH         &kp DOUBLE_QUOTES  &trans        &trans           &kp PIPE
-                               &trans                 &kp LGUI       &trans          &kp SPACE    &kp ENTER  &mo 3       &trans            &trans
+&kp ESC           &kp TILDE  &trans    &kp C_AL_TASK_MANAGER  &kp C_AL_CALC  &kp C_SNAPSHOT                          &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT         &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE
+&kp F1            &kp F2     &kp F3    &kp F4                 &kp F5         &kp F6                                  &kp F7      &kp F8            &kp F9             &kp F10       &kp F11          &kp F12
+&kp LEFT_CONTROL  &kp EXCL   &kp AT    &kp HASH               &kp DOLLAR     &kp PRCNT                               &kp PLUS    &kp KP_ASTERISK   &kp CARET          &kp LT        &kp GT           &kp EQUAL
+&kp LEFT_SHIFT    &kp TILDE  &kp LBRC  &kp RBRC               &kp LBKT       &kp RBKT        &kp LPAR     &kp RPAR   &kp MINUS   &kp SLASH         &kp DOUBLE_QUOTES  &trans        &kp PIPE         &kp RIGHT_SHIFT
+                                       &trans                 &kp LGUI       &trans          &kp SPACE    &kp ENTER  &mo 3       &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -59,11 +59,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&studio_unlock  &trans  &trans          &trans          &trans     &trans                                 &trans     &trans        &trans        &trans        &trans           &trans
-&trans          &trans  &trans          &kp UP_ARROW    &trans     &trans                                 &kp MINUS  &kp N7        &kp N8        &kp N9        &kp SLASH        &trans
-&trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans                                 &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK  &trans
-&trans          &trans  &trans          &trans          &trans     &trans  &kp LEFT_CONTROL    &kp DOT    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA        &trans
-                                        &trans          &kp LGUI   &mo 3   &kp SPACE           &kp ENTER  &trans     &trans        &trans
+&kp ESC           &trans  &trans          &trans          &trans     &studio_unlock                                 &trans     &trans        &trans        &trans        &trans           &trans
+&trans            &trans  &trans          &kp UP_ARROW    &trans     &trans                                         &kp MINUS  &kp N7        &kp N8        &kp N9        &kp SLASH        &kp PG_UP
+&kp LEFT_CONTROL  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans                                         &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK  &kp PAGE_DOWN
+&kp LEFT_SHIFT    &trans  &trans          &trans          &trans     &trans          &kp LEFT_CONTROL    &kp DOT    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA        &kp RIGHT_SHIFT
+                                          &trans          &kp LGUI   &mo 3           &kp SPACE           &kp ENTER  &trans     &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -71,11 +71,11 @@
 
         Both {
             bindings = <
-&trans  &kp C_BRI_UP  &kp C_BRI_DN  &trans  &trans    &bt BT_CLR                       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &trans        &trans        &trans  &trans    &trans                           &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &trans        &trans        &trans  &trans    &trans                           &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &trans        &trans        &trans  &trans    &trans      &trans       &trans  &trans        &trans        &trans        &trans        &trans        &trans
-                                    &trans  &kp LGUI  &trans      &kp SPACE    &trans  &trans        &trans        &trans
+&trans  &kp C_BRI_UP  &kp C_BRI_DN  &trans  &trans    &bt BT_CLR                          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &trans        &trans        &trans  &trans    &trans                              &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans  &trans    &trans                              &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans  &trans    &trans      &trans       &trans     &trans        &trans        &trans        &trans        &trans        &trans
+                                    &trans  &kp LGUI  &trans      &kp SPACE    &kp ENTER  &trans        &trans        &trans
             >;
         };
     };
