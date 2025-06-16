@@ -38,11 +38,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESC           &kp TILDE  &trans    &kp C_AL_TASK_MANAGER  &kp C_AL_CALC  &kp C_SNAPSHOT                          &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT         &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE
-&kp F1            &kp F2     &kp F3    &kp F4                 &kp F5         &kp F6                                  &kp F7      &kp F8            &kp F9             &kp F10       &kp F11          &kp F12
-&kp LEFT_CONTROL  &kp EXCL   &kp AT    &kp HASH               &kp DOLLAR     &kp PRCNT                               &kp PLUS    &kp KP_ASTERISK   &kp CARET          &kp LT        &kp GT           &kp EQUAL
-&kp LEFT_SHIFT    &kp TILDE  &kp LBRC  &kp RBRC               &kp LBKT       &kp RBKT        &kp LPAR     &kp RPAR   &kp MINUS   &kp SLASH         &kp DOUBLE_QUOTES  &trans        &kp PIPE         &kp RIGHT_SHIFT
-                                       &kp LEFT_ALT           &kp LGUI       &trans          &kp SPACE    &kp ENTER  &mo 3       &kp BSPC          &kp DELETE
+&kp ESC           &trans    &trans    &kp C_AL_TASK_MANAGER  &kp C_AL_CALC  &kp C_SNAPSHOT                          &kp C_PREV       &kp C_PLAY_PAUSE  &kp C_NEXT       &kp C_VOL_DN     &kp C_VOLUME_UP  &kp C_MUTE
+&kp TAB           &trans    &trans    &trans                 &trans         &trans                                  &kp MINUS        &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp EQUAL
+&kp LEFT_CONTROL  &kp LBRC  &kp RBRC  &kp LBKT               &kp RBKT       &trans                                  &kp PLUS         &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK     &trans
+&kp LEFT_SHIFT    &trans    &trans    &trans                 &trans         &trans          &kp LPAR     &kp RPAR   &kp KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT          &kp RIGHT_SHIFT
+                                      &kp LEFT_ALT           &kp LGUI       &trans          &kp SPACE    &kp ENTER  &mo 3            &kp BSPC          &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -57,11 +57,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESC           &trans  &kp PG_UP       &trans          &kp HOME   &studio_unlock                          &trans     &trans        &trans        &trans        &trans           &trans
-&trans            &trans  &kp PG_DN       &kp UP_ARROW    &kp END    &trans                                  &kp MINUS  &kp N7        &kp N8        &kp N9        &kp SLASH        &kp PG_UP
-&kp LEFT_CONTROL  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans                                  &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK  &kp PAGE_DOWN
-&kp LEFT_SHIFT    &trans  &trans          &trans          &trans     &trans          &trans       &kp DOT    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA        &kp RIGHT_SHIFT
-                                          &kp LEFT_ALT    &kp LGUI   &mo 3           &kp SPACE    &kp ENTER  &trans     &kp BSPC      &kp DELETE
+&kp ESC           &trans  &kp PG_UP       &trans          &kp HOME   &studio_unlock                                                 &trans  &trans    &trans      &trans  &trans  &trans
+&trans            &trans  &kp PG_DN       &kp UP_ARROW    &kp END    &trans                                                         &trans  &trans    &trans      &trans  &trans  &trans
+&kp LEFT_CONTROL  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans                                                         &trans  &trans    &trans      &trans  &trans  &trans
+&kp LEFT_SHIFT    &trans  &trans          &trans          &trans     &trans          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &trans    &trans      &trans  &trans  &kp RIGHT_SHIFT
+                                          &kp LEFT_ALT    &kp LGUI   &mo 3           &kp SPACE               &kp ENTER              &trans  &kp BSPC  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -69,11 +69,11 @@
 
         Both {
             bindings = <
-&trans  &kp C_BRI_UP  &kp C_BRI_DN  &trans  &trans    &bt BT_CLR                          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &trans        &trans        &trans  &trans    &trans                              &trans        &trans        &trans         &trans        &trans        &trans
-&trans  &trans        &trans        &trans  &trans    &trans                              &trans        &trans        &kp LC(ENTER)  &trans        &trans        &trans
-&trans  &trans        &trans        &trans  &trans    &trans      &trans       &trans     &trans        &trans        &trans         &trans        &trans        &trans
-                                    &trans  &kp LGUI  &trans      &kp SPACE    &kp ENTER  &trans        &trans        &trans
+&kp ESC         &kp C_BRI_UP  &kp C_BRI_DN  &trans        &trans    &bt BT_CLR                                                 &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&kp TAB         &kp F1        &kp F2        &kp F3        &kp F4    &trans                                                     &trans        &trans         &trans        &trans        &trans        &trans
+&kp LCTRL       &kp F5        &kp F6        &kp F7        &kp F8    &trans                                                     &trans        &trans         &trans        &trans        &trans        &trans
+&kp LEFT_SHIFT  &kp F9        &kp F10       &kp F11       &kp F12   &trans      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans        &trans         &trans        &trans        &trans        &kp RIGHT_SHIFT
+                                            &kp LEFT_ALT  &kp LGUI  &trans      &kp SPACE               &kp ENTER              &trans        &kp BACKSPACE  &kp DELETE
             >;
         };
     };
